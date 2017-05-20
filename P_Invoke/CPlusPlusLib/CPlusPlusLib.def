@@ -1,0 +1,23 @@
+LIBRARY	"CPlusPlusLib"
+
+EXPORTS
+
+Add @ 1
+Sub @ 2
+Multiply @ 3
+PrintMsg @ 4
+ReverseAnsiString @ 5
+ReverseStringA @ 6
+GetStringNew @ 7
+IsAsciiNonblittable @ 8
+IsAsciiBlittable @ 9
+IsWasciiNonblittable @ 10
+BSTRString @ 11
+StructArgumentByVal @12
+StructArgumentByRef @13
+ReturnStruct @14
+ReturnStructFromArg @ 15
+GetEmployeeInfo @ 16
+ArrayOfChar @ 17
+ArrayOfString @ 18
+

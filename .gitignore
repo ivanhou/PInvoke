@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+P_Invoke/ipch/CPLUSPLUSLIB-1b2f3353/CPLUSPLUSLIB-f8c66f68.ipch
+P_Invoke/ipch/CPLUSPLUSLIB-1b2f3353/CPLUSPLUSLIB-30307b6e.ipch
+P_Invoke/P_Invoke/obj/Release/P_Invoke.csproj.FileListAbsolute.txt
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/CL.command.1.tlog
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/CL.write.1.tlog
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/CL.read.1.tlog
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/link.write.1.tlog
+P_Invoke/CPlusPlusLib/Debug/vc140.idb
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/link.read.1.tlog
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/link.command.1.tlog
+P_Invoke/CPlusPlusLib/Debug/CPlusPlusLib.tlog/CPlusPlusLib.write.1u.tlog
+P_Invoke/Debug/CPlusPlusLib.exp
+P_Invoke/P_Invoke.VC.db
