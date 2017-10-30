@@ -191,4 +191,25 @@ void __stdcall ArrayOfString(char* ppStrArray[], int size)
 	}
 }
 
+void __stdcall CallResulOfFunction(int a, int b, CallbackFunction cbFunc)
+{
+	cbFunc(a + b);
+}
+
+void __stdcall CallResulOfFunction_A(PMSEMPLOYEE pEmployee, CallbackFunction_A cbFunc)
+{
+	int mStatus = -1;
+	if (NULL != pEmployee)
+	{
+		/*pEmployee->employedYear = 2;
+		pEmployee->alias = (char*)CoTaskMemAlloc(255);
+		pEmployee->displayName = (char*)CoTaskMemAlloc(255);
+
+		strcpy_s(pEmployee->alias, 255, "man");
+		strcpy_s(pEmployee->displayName, 255, "HouJiajun");*/
+		GetEmployeeInfo(pEmployee);
+		mStatus = 0;
+	}
+	cbFunc(mStatus, pEmployee);
+}
 

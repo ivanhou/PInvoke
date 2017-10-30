@@ -40,6 +40,9 @@ typedef struct _PERSON2
 } PERSON2, *PPERSON2;
 
 
+typedef void(__stdcall *CallbackFunction)(int resul);
+typedef void(__stdcall *CallbackFunction_A)(int status, PMSEMPLOYEE resul);
+
 
 #ifndef CPLUSPLUSLIB_H_
 #define CPLUSPLUSLIB_H_
@@ -84,6 +87,8 @@ extern "C" __declspec(dllexport) UINT __stdcall ArrayOfChar(char charArray[], in
 
 extern "C" __declspec(dllexport) void __stdcall ArrayOfString(char* ppStrArray[], int size);
 
+extern "C" __declspec(dllexport) void  __stdcall CallResulOfFunction(int a, int b, CallbackFunction cbFunc);
 
+extern "C" __declspec(dllexport) void  __stdcall CallResulOfFunction_A(PMSEMPLOYEE pEmployee, CallbackFunction_A cbFunc);
 
 #endif

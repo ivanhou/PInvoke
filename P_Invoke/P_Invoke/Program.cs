@@ -108,6 +108,13 @@ namespace P_Invoke
             StringArray();
 
 
+            CPlusPlusLib.CBFunction cb = new CPlusPlusLib.CBFunction(callback);
+            CPlusPlusLib.CallResulOfFunction(2, 6, cb);
+
+            CPlusPlusLib.CBFunction_A cb_A = new CPlusPlusLib.CBFunction_A(callback_A);
+            MsEmployee_Class employee = new MsEmployee_Class();
+            employee.EmployeeID = 10002;
+            CPlusPlusLib.CallResulOfFunction_A(employee, cb_A);
 
             Console.WriteLine("\r\nPress any key to exit...");
             Console.Read();
@@ -301,6 +308,22 @@ namespace P_Invoke
             }
         }
 
+
+        private static void callback(int resul)
+        {
+            Console.WriteLine("callback funtion resul:{0}", resul);
+            Console.WriteLine("\r\n");
+        }
+
+        private static void callback_A(int status, MsEmployee_Class employee)
+        {
+            Console.WriteLine("callback funtion A resul:{0}", status);
+            Console.WriteLine("ID: {0}", employee.EmployeeID);
+            Console.WriteLine("Year:{0}", employee.EmployedYear);
+            Console.WriteLine("Alias: {0}", employee.Alias);
+            Console.WriteLine("Name: {0}", employee.DisplayName);
+            Console.WriteLine("\r\n");
+        }
 
     }
 }

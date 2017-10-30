@@ -8,7 +8,12 @@ namespace P_Invoke
 {
     public class CPlusPlusLib
     {
-        private const string _dllName = "D:\\Project\\C++\\P_Invoke\\Release\\CPlusPlusLib.dll";
+        private const string _dllName = "D:\\Project\\Git\\PInvoke\\P_Invoke\\Release\\CPlusPlusLib.dll";
+        //private const string _dllName = @"D:\Project\Git\PInvoke\P_Invoke\x64\Release\CPlusPlusLib.dll";
+
+        public delegate void CBFunction(int resul);
+
+        public delegate void CBFunction_A(int status, MsEmployee_Class employee);
 
 
         [DllImport(_dllName, CallingConvention = CallingConvention.StdCall)]
@@ -84,6 +89,11 @@ namespace P_Invoke
         public extern static void ArrayOfString([In, Out] string[] charArray, int arraySize);
 
 
+        [DllImport(_dllName, CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Ansi)]
+        public extern static void CallResulOfFunction(int a, int b, CBFunction callback);
+        
+        [DllImport(_dllName, CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Ansi)]
+        public extern static void CallResulOfFunction_A(MsEmployee_Class employee, CBFunction_A callback);
 
     }
 }

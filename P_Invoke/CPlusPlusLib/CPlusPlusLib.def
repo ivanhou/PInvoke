@@ -20,4 +20,6 @@ ReturnStructFromArg @ 15
 GetEmployeeInfo @ 16
 ArrayOfChar @ 17
 ArrayOfString @ 18
+CallResulOfFunction @ 19
+CallResulOfFunction_A @20
 
